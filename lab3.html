@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3</title>
+    <link href="css/lab3.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <a class="skip-link" href="#maincontent">Skip to main content</a>
+        <header>
+            <h1>The Eras Tour</h1>
+        </header>
+        <nav>
+            <h2 class="sr-only">Article Navigation</h2>
+               <ul>
+                   <li><span aria-hidden=”true” class="material-icons">info</span><a href="#about">About the Tour</a></li>
+                   <li><span aria-hidden=”true” class="material-icons">music_note</span><a href="#eras">Eras Performed</a></li>
+                   <li><span aria-hidden=”true” class="material-icons">stadium</span><a href="#tour">Remaining 2023 Tour Dates</a></li>
+                   <li><span aria-hidden=”true” class="material-icons">local_activity</span><a href="#buytix">Buy a Ticket</a></li>
+               </ul>
+        </nav>
+        <main id="maincontent">
+            <section id="about">
+                <h2>About the Tour</h2>
+                <p><strong>The Eras Tour</strong> is the ongoing sixth concert tour by American singer-songwriter Taylor Swift, who described it as a journey through all of her musical "eras". 
+                    An homage to her albums, the Eras Tour is her most expansive tour yet, with 146 dates across five continents. 
+                    It is her second all-stadium tour after the 2018 Reputation Stadium Tour.</p>
+            </section>
+            <section id="eras">
+                <h2>Eras Performed (in order)</h2>
+                <p><mark style="color:transparent">............</mark> = one of my favorites</p>
+                <ul>
+                    <li>Lover</li>
+                    <li>Fearles</li>
+                    <li>Evermore</li>
+                    <li><mark>Reputation</mark></li>
+                    <li>Speak Now</li>
+                    <li><mark>Red</mark></li>
+                    <li>Folklore</li>
+                    <li><mark>1989</mark></li>
+                    <li>Acoustic Set (Surprise Songs)</li>
+                    <li><mark>Midnights</mark></li>
+                </ul>
+            </section>
+            <section id="tour">
+                <h2>Remaining 2023 Tour Dates</h2>
+                <table>
+                    <caption>2023 Tour Dates</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Stadium</th>
+                            <th scope="col">City</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Thurs, Nov 9, 2023</td>
+                            <td>Estadio River Plate</td>
+                            <td>Buenos Aires, Argentina</td>
+                        </tr>
+                        <tr>
+                            <td>Fri, Nov 10, 2023</td>
+                            <td>Estadio River Plate</td>
+                            <td>Buenos Aires, Argentina</td>
+                        </tr>
+                        <tr>
+                            <td>Sat, Nov 11, 2023</td>
+                            <td>Estadio River Plate</td>
+                            <td>Buenos Aires, Argentina</td>
+                        </tr>
+                        <tr>
+                            <td>Fri, Nov 17, 2023</td>
+                            <td>Estadio Nilton Santos</td>
+                            <td>Rio De Janeiro, Brazil</td>
+                        </tr>
+                        <tr>
+                            <td>Sat, Nov 18, 2023</td>
+                            <td>Estadio Nilton Santos</td>
+                            <td>Rio De Janeiro, Brazil</td>
+                        </tr>
+                        <tr>
+                            <td>Sun, Nov 19, 2023</td>
+                            <td>Estadio Nilton Santos</td>
+                            <td>Rio De Janeiro, Brazil</td>
+                        </tr>
+                        <tr>
+                            <td>Fri, Nov 24, 2023</td>
+                            <td>Allianz Parque</td>
+                            <td>Sao Paulo, Brazil</td>
+                        </tr>
+                        <tr>
+                            <td>Sat, Nov 25, 2023</td>
+                            <td>Allianz Parque</td>
+                            <td>Sao Paulo, Brazil</td>
+                        </tr>
+                        <tr>
+                            <td>Sun, Nov 26, 2023</td>
+                            <td>Allianz Parque</td>
+                            <td>Sao Paulo, Brazil</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="buytix">
+                <h2>But Tickets</h2>
+                <form id="myform" method="post">
+                    <fieldset>
+                        <legend style="text-align: center;">Buy Eras Tour Tickets!</legend>
+                        <label for="name">
+                            What is your name? *required
+                            <input type="text" id="name" required>
+                        </label>
+                        <label for="email">
+                            What is your email?
+                            <input type="email" id="email" required>
+                        </label>
+                        <label for="phone">
+                            What is your phone number?
+                            <input type="tel" id="phone" minLength="7"  required>
+                        </label>
+                        <label for="price">
+                            Select what price tier you would like to buy *required:
+                            <select id="price" name="price" required>
+                                <option value="" selected>Select a Price Tier</option>
+                                <option value="49">49 (Upper Bowl (nosebleeds))</option>
+                                <option value="129">129 (Middle Bowl)</option>
+                                <option value="249">249 (Lower Bowl)</option>
+                                <option value="449">449 (Floor)</option>
+                              </select>
+                        </label>
+                        <label for="credit">
+                            What is your credit card number? *required
+                            <input type="number" id="credit" required>
+                        </label>
+                        <button type="submit" onclick="window.location.reload()">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
