@@ -8,8 +8,8 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <a id="skip" class="skip-link" href="#maincontent">Skip to main content</a>
     <div class="container">
+        <a id="skip" class="skip-link" href="#maincontent">Skip to main content</a>
     <!-- main heading of a page - only use h1 once per page -->
     <header>
         <h1>Tahira Zafar's Universal Design Class Portal</h1>
@@ -18,28 +18,34 @@
      <nav>
      <h2 class="sr-only">Article Navigation</h2>
         <ul>
-            <li><a href="/UniversalDesign/">Home</a></li>
             <li><a href="lab2.html">Lab 2</a></li>
             <li><a href="lab3.html">Lab 3</a></li>
             <li><a href="lab4.html">Lab 4</a></li>
         </ul>
     </nav>
     <main id="maincontent">
-      <section style="justify-content: center; align-items: center;">
+      <section>
         <h2>About Me</h2>
-        <figure style="text-align: center; margin-right: 20px;">
+        <!-- <figure style="margin-right: 20px;">
             <img src="img/london.JPG" alt="Me standing in front of the Tower Bridge in London" style="width: 400px; height: 480px">
             <figcaption>Me in London</figcaption>
-        </figure>
+        </figure> -->
         <p id="p1" style="font-size: 16px;">
             Hi, I'm Tahira, a senior computer science student from the University of Colorado Boulder.
             I am from California but also lived in Chicago and Seattle. 
-            In my free time, I really like to read and watch TV shows or Youtube. 
+            In my free time, I really like to read, bake, and watch TV shows. 
             I took this class because I have done some web development in the past but had not thought about the accessibility side of it. 
             I am enjoying learning new accessibility techniques that I can use in the future to ensure my sites are more accessible. 
         </p>
     </section>
     </main>
+    <aside id="pic" style="text-align: center;">
+        <h2 class="sr-only">Picture of me in London</h2>
+        <figure>
+            <img src="img/london.JPG" alt="Me standing in front of the Tower Bridge in London" style="width: 400px; height: 480px">
+            <figcaption style="text-align: center;">Me in London</figcaption>
+        </figure>
+    </aside>
 </div>
 </body>
 </html>
