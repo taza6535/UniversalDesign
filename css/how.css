@@ -37,13 +37,19 @@ transition: transform 0.3s;
 .skip-link:focus {
 transform: translateY(0);
 }
-p {
+p, ul {
     margin: 1.0em 0;
     line-height: 1.8em;
     font-family: 'Poppins', sans-serif;
 }
 h2{font-size: 1.25em;}
-
+.secboxh2, .secboxp {
+  margin-left: 20px;
+}
+.secbox {
+  margin: 2em 1em 1em 0;
+  background-color: rgb(238, 238, 238);
+}
 header,main,aside,footer {
     padding: 1.5em;
     border: none;
@@ -55,7 +61,7 @@ header,footer{
     text-align: center;
 }
 header {grid-area: heady; background: rgb(247, 247, 247)}
-nav {grid-area: nav1; background: rgb(245, 232, 243)}
+nav {grid-area: nav1; background: rgb(252, 157, 237)}
 main {grid-area: mainy; background: rgb(247,247,247); max-height: 100%;}
 #pic {grid-area: picy;}
 .container {

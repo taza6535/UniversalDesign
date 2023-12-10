@@ -27,35 +27,128 @@
       <section>
         <h2>How can we make sure our websites are universally designed?</h2>
         <p id="p1" style="font-size: 16px;">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Tempora officia, nam distinctio, culpa iusto voluptate voluptatem quo sequi ex magni totam pariatur amet cumque doloribus quis suscipit sit similique. 
-            Accusantium!
+            There are many ways to achieve a universally designed accessible page using technology.
+            It does not have to be hard, many of these are very simple additions that will help everyone be able to access your website. 
         </p>
+        <section class="secbox">
+            <h3 class="secboxh2">HTML5 Semantic Structure</h3>
+            <p class = "secboxp">
+                Semantic structure helps give meaning to the content to both the developer of the site and the user using it. 
+                For example, <code>&lt;div&gt;</code> does not tell us anything about what content it holds. 
+                However, elements like <code>&lt;form&gt;</code> and <code>&lt;table&gt;</code> tell us exactly what we are going to be seeing inside that tag. 
+            </p>
+            <p class = "secboxp">List of Other Semantic Elements</p>
+            <ul style="margin-left: 50px;">
+                <li><code>&lt;article&gt;</code>: specifies independent self-contained content</li>
+                <li><code>&lt;aside&gt;</code>: defines some content aside from the content it is placed in (sidebar)</li>
+                <li><code>&lt;details&gt;</code>: additional details that can be hidden</li>
+                <li><code>&lt;figcaption&gt;</code>: caption for figure elements</li>
+                <li><code>&lt;figure&gt;</code>: images, diagrams, illustrations, etc.</li>
+                <li><code>&lt;footer&gt;</code>: defines a footer for a document</li>
+                <li><code>&lt;header&gt;</code>: a container for introductory content</li>
+                <li><code>&lt;main&gt;</code>: the main content of the page</li>
+                <li><code>&lt;mark&gt;</code>: marked or <mark>highlighted</mark> text</li>
+                <li><code>&lt;nav&gt;</code>: navigation links for the page or site</li>
+                <li><code>&lt;section&gt;</code>: defines a section in a document</li>
+                <li><code>&lt;summary&gt;</code>: defines a visible heading for the details element</li>
+                <li><code>&lt;em&gt;</code>: <em>emphasized</em> text</li>
+            </ul>
+        </section>
+        <section class="secbox">
+            <h3 class = "secboxh2">Tables</h3>
+            <p class = "secboxp">
+                For tables, you use the <code>&lt;table&gt;</code> element to contain all your table content. 
+                You should have a <code>&lt;caption&gt;</code> element to provide a title for the table. 
+                The <code>&lt;thead&gt;</code> element holds the row with the headings for the columns and the <code>&lt;tr&gt;</code> element denotes a row.
+                Everything else is in a <code>&lt;tbody&gt;</code> element and each cell content is in a <code>&lt;td&gt;</code>. 
+            </p>
+        </section>
+        <section class="secbox">
+            <h3 class = "secboxh2">Forms</h3>
+            <p class = "secboxp">
+                Accessible forms are easy to understand, complete, and submit. 
+                Instructions, cues, required form fields, and field formatting requirements must be clearly identified to users. 
+                Error recovery must be intuitive and descriptive.
+            </p>
+            <p class = "secboxp">
+                A label describes the function of a form control (i.e., text area, checkbox, radio button, menu, etc.), and generally appears adjacent to it. 
+                Sighted users make the connection visually, but others cannot. 
+                The <code>&lt;label&gt;</code> element programmatically associates a text label to a form control, creating a connection in the code that doesn't rely on vision. 
+                ARIA labels (aria-labelledby and aria-label) may be used when it is not possible to use <code>&lt;label&gt;</code>. 
+                This causes a screen reader to announce the text label when the user navigates to the form control.
+            </p>
+            <p class = "secboxp">
+                Below is an example of a simple accessible form. 
+            </p>
+            <form id="myform" method="post" >
+                <fieldset>
+                    <legend style="text-align: center;">An Accessible Form!</legend>
+                    <label for="name">
+                        What is your name? *required
+                        <input type="text" id="name" required>
+                    </label>
+                    <label for="email">
+                        What is your email?
+                        <input type="email" id="email" required>
+                    </label>
+                    <label for="phone">
+                        What is your phone number?
+                        <input type="tel" id="phone" minLength="7"  required>
+                    </label>
+                    <button type="submit" onclick="window.location.reload()">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+        <section class="secbox">
+            <h3 class = "secboxh2">Skip Navigation Bar</h3>
+            <p class = "secboxp">
+                The skip navigation element is a bar that appears at the top either by hovering your mouse over the area or tabbing through the site. 
+                This button allows you to skip to the main section of the page without having to go through everyone that might come before.  
+            </p>
+        </section>
+    </section>
+    <section>
+        <h2>Testing your Websites</h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Iusto omnis corrupti error dolore? 
-            Obcaecati mollitia unde expedita deleniti ut culpa neque voluptates repellat, suscipit repudiandae, vero fugiat quia doloremque distinctio!
+            After you develop your sites, it is important to test it to make sure it is truly accessible. 
+            There are several tools to do this which we will be going over. 
         </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Iusto omnis corrupti error dolore? 
-            Obcaecati mollitia unde expedita deleniti ut culpa neque voluptates repellat, suscipit repudiandae, vero fugiat quia doloremque distinctio!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Iusto omnis corrupti error dolore? 
-            Obcaecati mollitia unde expedita deleniti ut culpa neque voluptates repellat, suscipit repudiandae, vero fugiat quia doloremque distinctio!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Iusto omnis corrupti error dolore? 
-            Obcaecati mollitia unde expedita deleniti ut culpa neque voluptates repellat, suscipit repudiandae, vero fugiat quia doloremque distinctio!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Iusto omnis corrupti error dolore? 
-            Obcaecati mollitia unde expedita deleniti ut culpa neque voluptates repellat, suscipit repudiandae, vero fugiat quia doloremque distinctio!
-        </p>
+        <section class ="secbox">
+            <h3 class = "secboxh2">WAVE</h3>
+            <p class = "secboxp">
+                WAVE stands for Web Accessibility Evaluation Tool. 
+                It is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities. 
+                WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, but also facilitates human evaluation of web content.
+                It can identify contrast errors for any colors or fonts, check whether your strucutre is semantically correct, and make sure your images have alt-texts.
+            </p>
+            <figure style="margin-left: 20px; text-align: center;">
+                <img src="img/wave.png" alt="screenshot of WAVE's interface on a webpage" style="height: 300px; width: auto;">
+                <figcaption>WAVE interface for a webpage showing errors and other details.</figcaption>
+            </figure>
+        </section>
+        <section class ="secbox">
+            <h3 class = "secboxh2">HTML5 Outliner</h3>
+            <p class = "secboxp">
+                The HTML5 Outliner is a Chrome extension that generates a navigable page outline with heading and sectioning elements.
+                It creates a table of contents of your page and identifies any potential untiled elements you have that could cause accessibility issues.
+            </p>
+            <figure style="margin-left: 20px; text-align: center;">
+                <img src="img/html5outliner.png" alt="screenshot of HTML5 Outliner interface" style="height: 200px; width: auto;">
+                <figcaption>HTML5 Outliner showing this page's outline.</figcaption>
+            </figure>
+        </section>
+        <section class ="secbox">
+            <h3 class = "secboxh2">Nu HTML Validator</h3>
+            <p class = "secboxp">
+                The Nu HTML Validator helps you catch unintended mistakes in your HTML, CSS, and SVG.
+                It makes sure your code complies with accessibility standards.
+
+            </p>
+            <figure style="margin-left: 20px; text-align: center;">
+                <img src="img/htmlnu.png" alt="screenshot of Nu Validator showing warnings" style="height: 400px; width: auto;">
+                <figcaption>HTML Validator interface showing warnings</figcaption>
+            </figure>
+        </section>
     </section>
     </main>
 </div>
