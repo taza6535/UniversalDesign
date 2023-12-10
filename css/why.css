@@ -37,7 +37,7 @@ transition: transform 0.3s;
 .skip-link:focus {
 transform: translateY(0);
 }
-p {
+p, ul {
     margin: 1.0em 0;
     line-height: 1.8em;
     font-family: 'Poppins', sans-serif;
@@ -55,22 +55,22 @@ header,footer{
     text-align: center;
 }
 header {grid-area: heady; background: rgb(247, 247, 247)}
-nav {grid-area: nav1; background: rgb(245, 232, 243)}
+nav {grid-area: nav1; background: rgb(252, 157, 237);}
 main {grid-area: mainy; background: rgb(247,247,247); max-height: 100%;}
-#pic {grid-area: picy;}
+#pic {grid-area: picy; background-color:rgb(247, 247, 247); height: 350px; margin-top: 25px;}
+#sevy {grid-area: sevy; background-color: rgb(235, 235, 235); height: 550px;}
 .container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "heady heady heady"
     "nav1 nav1 nav1"
     "mainy mainy picy"
-    "mainy mainy picy"
-    "mainy mainy picy"
+    "mainy mainy sevy"
 }
 
 body { 
@@ -106,6 +106,7 @@ grid-template-areas:
 "heady heady"
 "nav1 nav1"
 "mainy picy"
+"mainy sevy"
 }
 } /* end media query for medium/tablet */
 
@@ -118,6 +119,7 @@ grid-template-areas:
   "heady"
   "nav1"
   "picy"
+  "sevy"
   "mainy"
 }
 nav ul {
