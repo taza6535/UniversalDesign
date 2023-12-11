@@ -55,7 +55,7 @@ header,footer{
     text-align: center;
 }
 header {grid-area: heady; background: rgb(247, 247, 247)}
-nav {grid-area: nav1; background: rgb(252, 157, 237);}
+nav {grid-area: nav1; background: rgb(250, 182, 182);}
 main {grid-area: mainy; background: rgb(247,247,247); max-height: 100%;}
 #pic {grid-area: picy; background-color:rgb(247, 247, 247); height: 350px; margin-top: 25px;}
 #sevy {grid-area: sevy; background-color: rgb(235, 235, 235); height: 550px;}
